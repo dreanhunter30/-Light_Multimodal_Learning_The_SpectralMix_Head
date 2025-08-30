@@ -1,0 +1,34 @@
+{
+  "classes": [
+    "airplane",
+    "automobile",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+  ],
+  "encoders": {
+    "image": "open_clip ViT-B/16",
+    "text": "distilbert-base-uncased"
+  },
+  "R": 8,
+  "K_ACTIVE": 2,
+  "D_EMBED": 16,
+  "lambdas": {
+    "ent": 0.01,
+    "orth": 0.0003,
+    "align": 0.1,
+    "sep": 0.2,
+    "kcost": 0.002
+  },
+  "TAU_EVAL": 0.5,
+  "final_acc": {
+    "image": 0.9632,
+    "text": 1.0
+  },
+  "fast_test": false
+}
